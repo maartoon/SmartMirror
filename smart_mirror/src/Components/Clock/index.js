@@ -14,7 +14,7 @@ const Clock = ()=>{
         return ()=>{
             clearInterval(interval); // this stops the inteval function above from being run
         }
-    },[]); 
+    },[interval]); 
 
     return (<h2>{currentTime}</h2>); // displays the current time and is updated everytime currentTime is updated
 };
